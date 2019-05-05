@@ -1,0 +1,25 @@
+01:11:51.720 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-HG9VE1J with PID 5372 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+01:11:51.720 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+01:11:53.536 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$100f0f9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:11:53.861 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+01:11:53.866 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+01:11:53.882 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+01:11:53.882 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+01:11:53.882 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-12\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\a5500\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-12\bin;C:\Program Files\Java\jdk-12\jre\bin;C:\Program Files\Bandizip\;C:\Users\a5500\AppData\Roaming\npm;.]
+01:11:54.086 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01:11:54.086 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2303 ms
+01:11:54.834 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+01:11:54.952 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01:11:55.188 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+01:11:55.204 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+01:11:55.235 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+01:11:55.360 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+01:11:55.407 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+01:11:55.469 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+01:11:55.495 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+01:11:55.500 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.595 seconds (JVM running for 6.211)
+01:11:57.573 logback [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:11:57.574 logback [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:11:57.581 logback [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+01:11:58.305 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:11:58.567 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

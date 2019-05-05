@@ -1,0 +1,1204 @@
+10:17:44.357 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 15972 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+10:17:44.360 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+10:17:45.720 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d34f59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:17:45.994 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:17:46.006 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:17:46.014 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:17:46.014 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+10:17:46.019 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+10:17:46.138 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:17:46.138 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1718 ms
+10:17:47.090 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:17:47.204 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:17:47.447 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:17:47.465 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:17:47.501 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:17:47.624 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+10:17:47.630 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+10:17:47.637 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+10:17:47.647 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+10:17:47.655 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+10:17:47.668 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+10:17:47.683 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+10:17:47.688 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+10:17:47.691 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+10:17:47.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+10:17:47.696 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+10:17:47.700 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+10:17:47.706 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+10:17:47.712 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+10:17:47.714 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+10:17:47.717 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+10:17:47.720 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+10:17:47.722 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+10:17:47.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+10:17:47.748 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+10:17:47.750 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+10:17:47.754 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+10:17:47.755 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+10:17:47.757 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+10:17:47.760 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+10:17:47.762 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+10:17:47.766 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+10:17:47.777 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+10:17:47.779 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+10:17:47.782 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+10:17:47.784 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+10:17:47.788 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+10:17:47.805 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:17:47.823 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:17:47.827 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 3.971 seconds (JVM running for 5.473)
+10:21:01.594 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:21:01.596 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:21:01.603 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+10:21:01.650 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:21:01.976 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:55:20.117 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 1996 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+10:55:20.117 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+10:55:21.242 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f70057cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:55:21.523 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:55:21.538 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:55:21.538 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:55:21.538 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+10:55:21.554 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+10:55:21.663 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:55:21.663 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1515 ms
+10:55:22.258 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:55:22.381 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:55:22.537 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:55:22.553 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:55:22.584 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:55:22.647 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+10:55:22.647 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+10:55:22.662 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+10:55:22.662 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+10:55:22.662 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+10:55:22.662 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+10:55:22.678 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+10:55:22.678 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+10:55:22.678 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+10:55:22.678 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+10:55:22.678 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+10:55:22.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+10:55:22.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+10:55:22.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+10:55:22.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+10:55:22.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+10:55:22.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+10:55:22.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+10:55:22.709 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+10:55:22.725 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+10:55:22.740 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+10:55:22.740 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+10:55:22.740 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+10:55:22.756 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+10:55:22.756 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+10:55:22.772 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:55:22.803 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:55:22.803 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 3.233 seconds (JVM running for 4.577)
+12:52:51.443 logback [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:52:51.450 logback [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:52:51.497 logback [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 47 ms
+12:52:51.583 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:52:51.986 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:39:54.649 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 6840 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+14:39:54.659 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+14:39:55.679 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c846a4eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:39:55.953 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:39:55.966 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:39:55.973 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:39:55.974 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+14:39:55.979 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+14:39:56.093 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:39:56.099 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1400 ms
+14:39:56.450 logback [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'codeController': Unsatisfied dependency expressed through field 'codeService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.qpanda.jls.Service.CodeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+14:39:56.450 logback [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+14:39:56.465 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:39:56.550 logback [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field codeService in com.qpanda.jls.Controller.CodeController required a bean of type 'com.qpanda.jls.Service.CodeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.qpanda.jls.Service.CodeService' in your configuration.
+
+14:41:06.703 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 12156 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+14:41:06.703 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+14:41:07.763 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79b73a5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:41:08.013 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:41:08.023 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:41:08.023 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:41:08.023 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+14:41:08.033 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+14:41:08.133 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:41:08.133 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1390 ms
+14:41:08.673 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:41:08.753 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:41:08.903 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:41:08.923 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:41:08.953 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:41:09.033 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+14:41:09.036 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+14:41:09.041 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+14:41:09.046 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+14:41:09.049 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+14:41:09.052 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+14:41:09.061 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+14:41:09.063 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+14:41:09.065 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+14:41:09.067 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+14:41:09.069 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+14:41:09.071 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+14:41:09.074 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+14:41:09.080 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+14:41:09.081 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+14:41:09.084 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+14:41:09.086 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+14:41:09.088 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+14:41:09.090 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+14:41:09.108 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+14:41:09.110 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+14:41:09.112 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+14:41:09.112 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+14:41:09.114 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+14:41:09.116 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+14:41:09.118 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+14:41:09.122 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+14:41:09.129 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+14:41:09.131 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+14:41:09.133 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+14:41:09.135 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+14:41:09.136 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+14:41:09.149 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:41:09.166 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:41:09.170 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.791 seconds (JVM running for 3.726)
+14:41:13.634 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:41:13.636 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:41:13.641 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+14:43:09.933 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 7984 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+14:43:09.933 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+14:43:10.984 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d669a47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:43:11.223 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:43:11.233 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:43:11.243 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:43:11.243 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+14:43:11.253 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+14:43:11.363 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:43:11.363 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1388 ms
+14:43:11.903 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:43:11.994 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:43:12.148 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:43:12.160 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:43:12.189 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:43:12.266 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+14:43:12.269 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+14:43:12.274 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+14:43:12.279 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+14:43:12.282 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+14:43:12.285 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+14:43:12.295 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+14:43:12.297 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+14:43:12.300 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+14:43:12.301 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+14:43:12.303 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+14:43:12.305 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+14:43:12.308 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+14:43:12.313 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+14:43:12.314 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+14:43:12.318 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+14:43:12.320 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+14:43:12.322 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+14:43:12.324 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+14:43:12.345 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+14:43:12.346 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+14:43:12.348 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+14:43:12.349 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+14:43:12.351 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+14:43:12.353 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+14:43:12.355 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+14:43:12.359 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+14:43:12.367 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+14:43:12.369 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+14:43:12.372 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+14:43:12.373 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+14:43:12.375 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+14:43:12.387 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:43:12.405 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:43:12.408 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.784 seconds (JVM running for 3.68)
+14:43:22.083 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:43:22.084 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:43:22.089 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+14:46:00.286 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 14004 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+14:46:00.288 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+14:46:01.351 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e1a3de8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:46:01.581 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:46:01.591 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:46:01.601 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:46:01.601 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+14:46:01.601 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+14:46:01.711 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:46:01.711 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1387 ms
+14:46:02.216 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:46:02.296 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:46:02.461 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:46:02.471 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:46:02.501 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:46:02.591 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+14:46:02.591 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+14:46:02.591 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+14:46:02.601 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+14:46:02.601 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+14:46:02.611 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+14:46:02.611 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+14:46:02.621 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+14:46:02.624 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+14:46:02.624 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+14:46:02.624 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+14:46:02.631 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+14:46:02.631 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+14:46:02.631 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+14:46:02.631 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+14:46:02.641 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+14:46:02.641 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+14:46:02.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+14:46:02.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+14:46:02.666 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+14:46:02.666 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+14:46:02.671 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+14:46:02.672 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+14:46:02.672 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+14:46:02.672 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+14:46:02.681 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+14:46:02.686 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+14:46:02.691 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+14:46:02.691 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+14:46:02.691 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+14:46:02.691 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+14:46:02.701 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+14:46:02.711 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:46:02.731 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:46:02.731 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.78 seconds (JVM running for 3.662)
+14:46:10.484 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:46:10.485 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:46:10.490 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+14:48:01.960 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 516 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+14:48:01.963 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+14:48:02.992 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d999637] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:48:03.235 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:48:03.246 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:48:03.252 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:48:03.253 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+14:48:03.257 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+14:48:03.367 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:48:03.368 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1374 ms
+14:48:03.891 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:48:03.977 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:48:04.121 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:48:04.132 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:48:04.161 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:48:04.231 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+14:48:04.241 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+14:48:04.241 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+14:48:04.246 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+14:48:04.251 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+14:48:04.251 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+14:48:04.261 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+14:48:04.261 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+14:48:04.261 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+14:48:04.261 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+14:48:04.261 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+14:48:04.261 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+14:48:04.271 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+14:48:04.271 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+14:48:04.271 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+14:48:04.271 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+14:48:04.281 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+14:48:04.281 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+14:48:04.281 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+14:48:04.296 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+14:48:04.301 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+14:48:04.301 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+14:48:04.301 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+14:48:04.301 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+14:48:04.301 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+14:48:04.301 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+14:48:04.311 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+14:48:04.311 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+14:48:04.311 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+14:48:04.311 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+14:48:04.321 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+14:48:04.321 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+14:48:04.334 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:48:04.351 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:48:04.351 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.7 seconds (JVM running for 3.614)
+14:48:14.248 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:48:14.249 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:48:14.256 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+14:48:14.282 logback [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.qpanda.jls.Controller.CodeController.getReturn(CodeController.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+14:51:24.380 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 6440 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+14:51:24.382 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+14:51:25.381 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30510d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:51:25.621 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:51:25.628 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:51:25.638 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:51:25.638 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+14:51:25.638 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+14:51:25.733 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:51:25.733 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1319 ms
+14:51:26.260 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:51:26.348 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:51:26.508 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:51:26.523 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:51:26.553 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:51:26.618 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+14:51:26.618 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+14:51:26.628 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+14:51:26.628 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+14:51:26.639 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+14:51:26.639 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+14:51:26.648 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+14:51:26.648 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+14:51:26.648 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+14:51:26.648 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+14:51:26.658 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+14:51:26.658 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+14:51:26.658 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+14:51:26.668 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+14:51:26.668 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+14:51:26.668 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+14:51:26.668 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+14:51:26.678 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+14:51:26.678 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+14:51:26.693 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+14:51:26.698 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+14:51:26.698 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+14:51:26.698 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+14:51:26.698 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+14:51:26.698 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+14:51:26.698 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+14:51:26.708 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+14:51:26.718 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+14:51:26.719 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+14:51:26.721 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+14:51:26.721 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+14:51:26.721 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+14:51:26.741 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:51:26.760 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:51:26.761 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.674 seconds (JVM running for 3.58)
+14:51:34.401 logback [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:51:34.402 logback [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:51:34.407 logback [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+14:55:29.702 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 6604 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+14:55:29.702 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+14:55:30.662 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$247ba60d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:55:30.882 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:55:30.892 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:55:30.892 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:55:30.892 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+14:55:30.902 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+14:55:31.004 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:55:31.004 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1272 ms
+14:55:31.531 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:55:31.631 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:55:31.771 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:55:31.792 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:55:31.812 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:55:31.892 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+14:55:31.892 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+14:55:31.892 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+14:55:31.902 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+14:55:31.902 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+14:55:31.911 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+14:55:31.911 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+14:55:31.921 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+14:55:31.921 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+14:55:31.921 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+14:55:31.928 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+14:55:31.931 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+14:55:31.931 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+14:55:31.931 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+14:55:31.942 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+14:55:31.942 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+14:55:31.942 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+14:55:31.942 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+14:55:31.942 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+14:55:31.972 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+14:55:31.974 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+14:55:31.976 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+14:55:31.977 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+14:55:31.979 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+14:55:31.980 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+14:55:31.982 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+14:55:31.986 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+14:55:31.996 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+14:55:31.998 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+14:55:32.002 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+14:55:32.003 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+14:55:32.003 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+14:55:32.011 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:55:32.032 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:55:32.032 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.64 seconds (JVM running for 3.528)
+14:55:37.088 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:55:37.089 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:55:37.095 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+15:14:12.912 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 8040 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+15:14:12.916 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+15:14:14.070 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a06dce17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:14:14.317 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:14:14.327 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:14:14.334 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:14:14.334 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+15:14:14.339 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+15:14:14.449 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:14:14.449 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1497 ms
+15:14:15.015 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:14:15.103 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:14:15.260 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+15:14:15.275 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:14:15.307 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+15:14:15.382 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+15:14:15.385 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+15:14:15.390 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+15:14:15.394 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+15:14:15.398 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+15:14:15.400 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+15:14:15.409 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+15:14:15.410 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+15:14:15.413 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+15:14:15.414 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+15:14:15.416 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+15:14:15.418 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+15:14:15.421 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+15:14:15.426 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+15:14:15.428 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+15:14:15.430 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+15:14:15.432 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+15:14:15.434 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+15:14:15.436 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+15:14:15.453 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+15:14:15.455 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+15:14:15.457 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+15:14:15.458 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+15:14:15.459 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+15:14:15.460 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+15:14:15.462 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+15:14:15.466 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+15:14:15.474 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+15:14:15.475 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+15:14:15.478 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+15:14:15.479 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+15:14:15.481 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+15:14:15.494 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:14:15.516 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:14:15.519 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.95 seconds (JVM running for 3.885)
+15:14:25.618 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:14:25.619 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:14:25.626 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+15:23:17.190 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 12992 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+15:23:17.192 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+15:23:18.242 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7aaa62e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:23:18.485 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:23:18.496 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:23:18.504 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:23:18.504 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+15:23:18.509 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+15:23:18.615 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:23:18.615 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1387 ms
+15:23:19.174 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:23:19.266 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:23:19.426 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+15:23:19.441 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:23:19.471 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+15:23:19.547 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+15:23:19.550 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+15:23:19.556 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+15:23:19.560 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+15:23:19.563 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+15:23:19.566 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+15:23:19.575 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+15:23:19.577 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+15:23:19.578 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+15:23:19.579 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+15:23:19.583 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+15:23:19.584 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+15:23:19.586 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+15:23:19.596 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+15:23:19.597 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+15:23:19.600 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+15:23:19.602 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+15:23:19.604 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+15:23:19.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+15:23:19.625 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+15:23:19.627 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+15:23:19.629 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+15:23:19.630 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+15:23:19.632 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+15:23:19.634 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+15:23:19.636 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+15:23:19.639 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+15:23:19.647 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+15:23:19.648 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+15:23:19.650 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+15:23:19.652 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+15:23:19.654 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+15:23:19.666 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:23:19.686 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:23:19.689 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.828 seconds (JVM running for 3.751)
+15:23:26.707 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:23:26.708 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:23:26.715 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+16:00:18.290 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 15320 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:00:18.290 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:00:19.520 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc837bc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:00:19.780 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:00:19.790 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:00:19.795 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:00:19.795 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:00:19.800 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:00:19.900 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:00:19.900 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1570 ms
+16:00:20.541 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:00:20.630 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:00:20.790 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:00:20.800 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:00:20.833 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:00:20.910 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:00:20.920 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:00:20.920 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:00:20.931 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:00:20.931 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:00:20.931 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:00:20.940 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:00:20.951 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:00:20.953 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:00:20.953 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:00:20.953 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:00:20.953 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:00:20.961 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:00:20.966 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:00:20.966 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:00:20.970 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:00:20.970 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:00:20.975 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:00:20.975 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:00:20.995 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:00:20.995 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:00:20.995 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:00:20.995 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:00:21.000 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:00:21.000 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:00:21.000 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:00:21.000 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:00:21.010 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:00:21.010 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:00:21.010 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:00:21.021 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:00:21.021 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:00:21.030 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:00:21.050 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:00:21.055 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 3.18 seconds (JVM running for 4.182)
+16:00:25.227 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:00:25.228 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:00:25.234 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+16:02:32.141 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 12048 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:02:32.141 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:02:33.246 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b4f34cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:02:33.486 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:02:33.496 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:02:33.506 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:02:33.506 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:02:33.506 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:02:33.616 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:02:33.616 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1440 ms
+16:02:34.171 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:02:34.266 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:02:34.428 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:02:34.439 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:02:34.466 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:02:34.546 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:02:34.546 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:02:34.556 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:02:34.561 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:02:34.561 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:02:34.566 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:02:34.576 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:02:34.576 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:02:34.576 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:02:34.576 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:02:34.576 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:02:34.586 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:02:34.586 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:02:34.596 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:02:34.596 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:02:34.596 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:02:34.596 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:02:34.596 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:02:34.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:02:34.616 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:02:34.626 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:02:34.629 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:02:34.629 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:02:34.629 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:02:34.629 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:02:34.629 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:02:34.637 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:02:34.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:02:34.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:02:34.651 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:02:34.651 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:02:34.651 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:02:34.666 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:02:34.678 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:02:34.686 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.9 seconds (JVM running for 3.805)
+16:02:41.769 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:02:41.770 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:02:41.775 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+16:03:23.969 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 2728 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:03:23.972 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:03:25.206 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$513f0480] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:03:25.498 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:03:25.508 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:03:25.516 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:03:25.517 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:03:25.522 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:03:25.665 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:03:25.666 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1655 ms
+16:03:26.251 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:03:26.350 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:03:26.537 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:03:26.550 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:03:26.581 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:03:26.668 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:03:26.672 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:03:26.679 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:03:26.685 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:03:26.691 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:03:26.695 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:03:26.707 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:03:26.710 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:03:26.713 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:03:26.715 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:03:26.719 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:03:26.722 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:03:26.726 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:03:26.734 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:03:26.735 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:03:26.739 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:03:26.742 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:03:26.744 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:03:26.748 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:03:26.772 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:03:26.774 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:03:26.775 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:03:26.776 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:03:26.779 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:03:26.781 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:03:26.784 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:03:26.788 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:03:26.799 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:03:26.800 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:03:26.805 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:03:26.807 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:03:26.809 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:03:26.833 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:03:26.858 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:03:26.861 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 3.288 seconds (JVM running for 4.286)
+16:03:42.326 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:03:42.327 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:03:42.333 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+16:04:28.221 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 13416 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:04:28.226 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:04:29.299 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ef383b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:04:29.536 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:04:29.546 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:04:29.556 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:04:29.556 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:04:29.556 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:04:29.676 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:04:29.676 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1420 ms
+16:04:30.216 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:04:30.316 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:04:30.461 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:04:30.471 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:04:30.496 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:04:30.571 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:04:30.576 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:04:30.576 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:04:30.586 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:04:30.591 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:04:30.591 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:04:30.601 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:04:30.601 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:04:30.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:04:30.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:04:30.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:04:30.611 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:04:30.611 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:04:30.618 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:04:30.618 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:04:30.618 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:04:30.618 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:04:30.626 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:04:30.626 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:04:30.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:04:30.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:04:30.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:04:30.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:04:30.651 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:04:30.651 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:04:30.656 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:04:30.656 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:04:30.666 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:04:30.671 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:04:30.671 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:04:30.676 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:04:30.676 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:04:30.686 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:04:30.706 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:04:30.711 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.837 seconds (JVM running for 3.76)
+16:04:40.229 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:04:40.230 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:04:40.236 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+16:08:20.396 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 1632 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:08:20.396 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:08:21.392 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30510d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:08:21.626 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:08:21.636 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:08:21.646 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:08:21.646 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:08:21.646 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:08:21.746 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:08:21.746 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1320 ms
+16:08:22.256 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:08:22.336 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:08:22.491 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:08:22.504 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:08:22.526 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:08:22.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:08:22.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:08:22.606 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:08:22.617 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:08:22.617 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:08:22.617 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:08:22.626 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:08:22.626 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:08:22.636 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:08:22.636 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:08:22.641 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:08:22.641 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:08:22.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:08:22.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:08:22.646 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:08:22.657 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:08:22.659 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:08:22.659 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:08:22.659 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:08:22.681 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:08:22.681 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:08:22.681 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:08:22.686 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:08:22.686 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:08:22.686 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:08:22.686 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:08:22.691 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:08:22.696 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:08:22.696 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:08:22.704 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:08:22.706 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:08:22.706 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:08:22.716 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:08:22.736 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:08:22.736 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.67 seconds (JVM running for 3.57)
+16:08:30.591 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:08:30.593 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:08:30.598 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+16:09:53.758 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 8476 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:09:53.768 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:09:54.738 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e7d4910] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:09:54.968 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:09:54.981 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:09:54.988 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:09:54.988 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:09:54.988 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:09:55.093 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:09:55.093 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1285 ms
+16:09:55.618 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:09:55.708 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:09:55.858 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:09:55.868 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:09:55.893 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:09:55.963 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:09:55.966 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:09:55.971 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:09:55.975 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:09:55.978 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:09:55.978 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:09:55.988 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:09:55.988 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:09:55.988 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:09:55.988 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:09:55.993 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:09:55.993 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:09:55.998 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:09:56.003 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:09:56.003 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:09:56.008 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:09:56.008 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:09:56.008 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:09:56.013 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:09:56.028 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:09:56.028 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:09:56.028 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:09:56.028 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:09:56.033 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:09:56.033 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:09:56.033 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:09:56.038 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:09:56.048 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:09:56.048 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:09:56.048 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:09:56.053 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:09:56.053 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:09:56.060 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:09:56.078 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:09:56.078 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.66 seconds (JVM running for 3.575)
+16:10:04.631 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:10:04.632 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:10:04.637 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+16:22:05.564 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 11972 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:22:05.564 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:22:06.739 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f01784d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:22:06.980 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:22:06.989 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:22:06.989 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:22:06.989 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:22:06.999 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:22:07.104 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:22:07.104 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1486 ms
+16:22:07.609 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:22:07.689 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:22:07.849 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:22:07.859 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:22:07.889 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:22:07.969 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:22:07.972 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:22:07.974 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:22:07.978 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:22:07.978 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:22:07.978 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:22:07.989 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:22:07.989 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:22:07.999 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:22:07.999 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:22:07.999 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:22:07.999 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:22:08.009 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:22:08.013 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:22:08.013 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:22:08.019 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:22:08.019 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:22:08.019 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:22:08.019 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:22:08.038 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:22:08.043 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:22:08.043 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:22:08.043 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:22:08.048 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:22:08.048 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:22:08.048 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:22:08.048 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:22:08.062 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:22:08.062 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:22:08.062 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:22:08.062 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:22:08.068 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:22:08.079 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:22:08.099 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:22:08.104 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.911 seconds (JVM running for 3.842)
+16:24:07.088 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 8212 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:24:07.088 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:24:08.168 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30a3a319] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:24:08.408 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:24:08.418 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:24:08.429 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:24:08.429 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:24:08.429 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:24:08.539 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:24:08.539 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1410 ms
+16:24:09.094 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:24:09.179 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:24:09.338 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:24:09.351 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:24:09.379 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:24:09.449 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:24:09.449 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:24:09.458 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:24:09.463 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:24:09.469 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:24:09.471 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:24:09.479 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:24:09.479 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:24:09.484 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:24:09.484 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:24:09.489 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:24:09.489 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:24:09.494 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:24:09.499 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:24:09.499 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:24:09.499 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:24:09.508 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:24:09.508 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:24:09.508 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:24:09.529 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:24:09.529 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:24:09.529 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:24:09.529 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:24:09.529 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:24:09.539 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:24:09.539 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:24:09.544 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:24:09.549 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:24:09.549 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:24:09.559 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:24:09.559 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:24:09.559 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:24:09.571 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:24:09.589 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:24:09.589 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.85 seconds (JVM running for 3.742)
+16:24:18.992 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:24:18.993 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:24:18.999 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+16:25:17.724 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 7656 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:25:17.724 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:25:18.780 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$51a5c850] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:25:19.020 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:25:19.030 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:25:19.040 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:25:19.040 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:25:19.046 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:25:19.164 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:25:19.164 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1404 ms
+16:25:19.705 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:25:19.800 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:25:19.970 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:25:19.980 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:25:20.005 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:25:20.080 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:25:20.080 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:25:20.080 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:25:20.090 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:25:20.090 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:25:20.090 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:25:20.100 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:25:20.100 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:25:20.105 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:25:20.105 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:25:20.110 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:25:20.110 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:25:20.110 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:25:20.115 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:25:20.120 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:25:20.120 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:25:20.120 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:25:20.120 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:25:20.120 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:25:20.140 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:25:20.140 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:25:20.140 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:25:20.140 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:25:20.148 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:25:20.151 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:25:20.151 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:25:20.155 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:25:20.160 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:25:20.160 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:25:20.160 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:25:20.170 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:25:20.170 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:25:20.185 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:25:20.200 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:25:20.200 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.83 seconds (JVM running for 3.826)
+16:25:29.380 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:25:29.381 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:25:29.387 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+16:30:12.611 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 14712 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:30:12.613 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:30:13.622 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c0eb8ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:30:13.865 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:30:13.875 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:30:13.882 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:30:13.883 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:30:13.887 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:30:13.998 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:30:13.998 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1347 ms
+16:30:14.541 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:30:14.636 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:30:14.798 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:30:14.810 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:30:14.840 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:30:14.928 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:30:14.932 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:30:14.937 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:30:14.943 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:30:14.946 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:30:14.949 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:30:14.958 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:30:14.960 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:30:14.962 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:30:14.963 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:30:14.966 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:30:14.969 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:30:14.971 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:30:14.978 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:30:14.980 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:30:14.984 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:30:14.986 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:30:14.988 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:30:14.990 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:30:15.009 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:30:15.011 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:30:15.013 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:30:15.014 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:30:15.017 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:30:15.018 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:30:15.021 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:30:15.025 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:30:15.033 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:30:15.035 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:30:15.037 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:30:15.038 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:30:15.040 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:30:15.052 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:30:15.070 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:30:15.073 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.777 seconds (JVM running for 3.676)
+16:30:26.110 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:30:26.111 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:30:26.117 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+16:30:59.984 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on DESKTOP-3ICNE88 with PID 2652 (C:\Users\a5500\IdeaProjects\jls\target\classes started by a5500 in C:\Users\a5500\IdeaProjects\jls)
+16:30:59.987 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+16:31:01.032 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5dfee13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:31:01.274 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:31:01.284 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:31:01.292 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:31:01.292 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+16:31:01.296 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\jdk-12.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\jdk-12.0.1\bin;C:\Program Files (x86)\jdk-12.0.1\jre\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+16:31:01.404 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:31:01.405 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1381 ms
+16:31:02.001 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:31:02.094 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:31:02.271 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:31:02.283 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:31:02.312 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:31:02.394 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addArticleUsingPOST_1
+16:31:02.397 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteArticleUsingDELETE_1
+16:31:02.402 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleUsingGET_1
+16:31:02.406 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+16:31:02.409 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+16:31:02.412 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateArticleUsingPUT_1
+16:31:02.420 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addChapterUsingPOST_1
+16:31:02.422 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteChapterUsingDELETE_1
+16:31:02.425 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_2
+16:31:02.425 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_3
+16:31:02.428 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterUsingGET_1
+16:31:02.430 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getChapterListByTypeUsingGET_1
+16:31:02.433 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateChapterUsingPUT_1
+16:31:02.439 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addCommentUsingPOST_1
+16:31:02.441 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_1
+16:31:02.443 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentUsingGET_1
+16:31:02.445 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListUsingGET_1
+16:31:02.447 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getCommentListByArticleIdUsingGET_1
+16:31:02.449 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateCommentUsingPUT_1
+16:31:02.467 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addQuestionUsingPOST_1
+16:31:02.469 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteQuestionUsingDELETE_1
+16:31:02.471 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_2
+16:31:02.471 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_3
+16:31:02.473 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionUsingGET_1
+16:31:02.474 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getQuestionListUsingGET_1
+16:31:02.477 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateQuestionUsingPUT_1
+16:31:02.480 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteCommentUsingDELETE_2
+16:31:02.488 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+16:31:02.490 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteUserUsingDELETE_1
+16:31:02.492 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserUsingGET_1
+16:31:02.494 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getUserListUsingGET_1
+16:31:02.495 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+16:31:02.507 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:31:02.525 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:31:02.528 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 2.909 seconds (JVM running for 3.841)
+16:31:07.415 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:31:07.416 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:31:07.422 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms

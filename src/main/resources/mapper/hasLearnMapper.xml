@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qpanda.jls.Dao.hasLearnMapper">
+  <resultMap id="BaseResultMap" type="com.qpanda.jls.pojo.hasLearn">
+    <id column="haslearnid" jdbcType="INTEGER" property="haslearnid" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="chapterid" jdbcType="INTEGER" property="chapterid" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    haslearnid, userid, chapterid
+  </sql>
+  <select id="selectByExample" parameterType="com.qpanda.jls.pojo.hasLearnExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from haslearn
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from haslearn
+    where haslearnid = #{haslearnid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from haslearn
+    where haslearnid = #{haslearnid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.qpanda.jls.pojo.hasLearn">
+    insert into haslearn (haslearnid, userid, chapterid
+      )
+    values (#{haslearnid,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{chapterid,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.qpanda.jls.pojo.hasLearn">
+    insert into haslearn
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="haslearnid != null">
+        haslearnid,
+      </if>
+      <if test="userid != null">
+        userid,
+      </if>
+      <if test="chapterid != null">
+        chapterid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="haslearnid != null">
+        #{haslearnid,jdbcType=INTEGER},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="chapterid != null">
+        #{chapterid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qpanda.jls.pojo.hasLearn">
+    update haslearn
+    <set>
+      <if test="userid != null">
+        userid = #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="chapterid != null">
+        chapterid = #{chapterid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where haslearnid = #{haslearnid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qpanda.jls.pojo.hasLearn">
+    update haslearn
+    set userid = #{userid,jdbcType=INTEGER},
+      chapterid = #{chapterid,jdbcType=INTEGER}
+    where haslearnid = #{haslearnid,jdbcType=INTEGER}
+  </update>
+</mapper>

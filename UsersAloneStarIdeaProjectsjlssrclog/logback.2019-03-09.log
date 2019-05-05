@@ -1,0 +1,422 @@
+00:01:10.354 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 8088 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:01:10.359 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:01:12.061 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3967bee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:01:12.410 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:01:12.425 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:01:12.434 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:01:12.434 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:01:12.441 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:01:12.570 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:01:12.570 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2148 ms
+00:01:13.119 logback [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.qpanda.jls.Service.QuestionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+00:01:13.122 logback [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+00:01:13.134 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+00:01:13.257 logback [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field questionService in com.qpanda.jls.Controller.QuestionController required a bean of type 'com.qpanda.jls.Service.QuestionService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.qpanda.jls.Service.QuestionService' in your configuration.
+
+00:01:57.766 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 7300 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:01:57.769 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:01:59.253 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$355e6147] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:01:59.572 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:01:59.585 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:01:59.594 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:01:59.595 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:01:59.601 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:01:59.730 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:01:59.730 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1876 ms
+00:02:00.288 logback [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionController': Unsatisfied dependency expressed through field 'questionService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.qpanda.jls.Service.QuestionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+00:02:00.291 logback [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+00:02:00.302 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+00:02:00.413 logback [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field questionService in com.qpanda.jls.Controller.QuestionController required a bean of type 'com.qpanda.jls.Service.QuestionService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.qpanda.jls.Service.QuestionService' in your configuration.
+
+00:02:42.200 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 7844 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:02:42.204 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:02:43.896 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f239f07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:02:44.219 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:02:44.233 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:02:44.245 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:02:44.245 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:02:44.252 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:02:44.381 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:02:44.381 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2099 ms
+00:02:45.302 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:02:45.446 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:02:45.691 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:02:45.710 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:02:45.754 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:02:45.903 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:02:45.948 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:02:46.001 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:02:46.028 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:02:46.031 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.362 seconds (JVM running for 5.767)
+00:02:50.529 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:02:50.529 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:02:50.537 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:02:51.343 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:02:52.497 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:03:31.403 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 3112 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:03:31.406 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:03:32.914 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aff30bab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:03:33.252 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:03:33.266 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:03:33.275 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:03:33.275 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:03:33.281 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:03:33.412 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:03:33.412 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1948 ms
+00:03:34.309 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:03:34.444 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:03:34.678 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:03:34.697 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:03:34.740 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:03:34.888 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:03:34.929 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:03:34.974 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:03:35.000 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:03:35.003 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.075 seconds (JVM running for 5.395)
+00:03:46.364 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:03:46.364 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:03:46.371 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:03:46.995 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:03:47.885 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:06:26.921 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 8860 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:06:26.926 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:06:28.238 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f0d57ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:06:28.597 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:06:28.612 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:06:28.621 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:06:28.621 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:06:28.628 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:06:28.765 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:06:28.765 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1772 ms
+00:06:29.669 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:06:29.800 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:06:30.040 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:06:30.060 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:06:30.105 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:06:30.263 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:06:30.308 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:06:30.355 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:06:30.382 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:06:30.385 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.145 seconds (JVM running for 5.348)
+00:06:36.048 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:06:36.048 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:06:36.057 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+00:06:36.755 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:06:37.896 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:07:07.655 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 7888 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:07:07.659 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:07:09.279 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3e468b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:07:09.608 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:07:09.622 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:07:09.631 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:07:09.631 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:07:09.638 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:07:09.767 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:07:09.767 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1987 ms
+00:07:10.696 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:07:10.844 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:07:11.084 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:07:11.103 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:07:11.150 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:07:11.309 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:07:11.361 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:07:11.440 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:07:11.471 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:07:11.475 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.371 seconds (JVM running for 5.758)
+00:07:13.226 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:07:13.226 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:07:13.233 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:07:13.939 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:07:14.810 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:09:32.904 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 9472 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:09:32.911 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:09:34.594 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36826712] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:09:34.933 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:09:34.948 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:09:34.957 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:09:34.957 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:09:34.964 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:09:35.095 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:09:35.095 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2110 ms
+00:09:36.041 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:09:36.193 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:09:36.432 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:09:36.453 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:09:36.503 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:09:36.683 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:09:36.733 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:09:36.788 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:09:36.817 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:09:36.821 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.447 seconds (JVM running for 5.898)
+00:09:36.866 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:09:36.866 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:09:36.874 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+00:09:37.870 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:09:39.027 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:09:42.661 logback [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'star' for method parameter of type String]
+00:09:44.397 logback [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'star' for method parameter of type String]
+00:09:45.712 logback [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'star' for method parameter of type String]
+00:09:47.000 logback [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'star' for method parameter of type String]
+00:11:42.712 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 9288 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:11:42.716 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:11:44.328 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e33ebcd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:11:44.649 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:11:44.663 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:11:44.672 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:11:44.672 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:11:44.679 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:11:44.812 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:11:44.812 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2012 ms
+00:11:45.710 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:11:45.845 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:11:46.083 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:11:46.101 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:11:46.145 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:11:46.294 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:11:46.339 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:11:46.383 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:11:46.407 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:11:46.411 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.171 seconds (JVM running for 5.383)
+00:11:49.875 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:11:49.875 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:11:49.883 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+00:11:50.852 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:11:51.705 logback [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:11:53.986 logback [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'star' for method parameter of type String]
+00:12:05.079 logback [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'star' for method parameter of type String]
+00:14:48.322 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 7076 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:14:48.328 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:14:50.270 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37538ce4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:14:50.600 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:14:50.614 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:14:50.623 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:14:50.623 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:14:50.629 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:14:50.765 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:14:50.765 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2358 ms
+00:14:51.753 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:14:51.902 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:14:52.147 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:14:52.167 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:14:52.213 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:14:52.369 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:14:52.414 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:14:52.462 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:14:52.487 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:14:52.491 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.723 seconds (JVM running for 6.099)
+00:14:55.676 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:14:55.676 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:14:55.686 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+00:14:56.673 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:14:57.560 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:16:41.408 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 7500 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:16:41.413 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:16:43.095 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ec953] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:16:43.439 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:16:43.453 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:16:43.465 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:16:43.466 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:16:43.474 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:16:43.604 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:16:43.604 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2127 ms
+00:16:44.532 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:16:44.681 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:16:44.920 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:16:44.939 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:16:44.982 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:16:45.138 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:16:45.180 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:16:45.228 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:16:45.253 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:16:45.257 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.338 seconds (JVM running for 5.74)
+00:16:45.311 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:16:45.311 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:16:45.318 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:16:45.991 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:16:47.158 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:19:24.586 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 10060 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:19:24.591 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:19:26.379 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b612e2c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:19:26.718 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:19:26.732 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:19:26.742 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:19:26.742 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:19:26.749 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:19:26.888 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:19:26.889 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2219 ms
+00:19:27.858 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:19:28.000 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:19:28.251 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:19:28.271 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:19:28.317 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:19:28.473 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:19:28.515 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:19:28.561 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:19:28.587 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:19:28.590 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.499 seconds (JVM running for 5.807)
+00:19:39.176 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:19:39.176 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:19:39.183 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:19:39.288 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:19:40.121 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:25:33.021 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 9912 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:25:33.025 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:25:34.587 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a781bd72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:25:34.910 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:25:34.924 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:25:34.932 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:25:34.933 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:25:34.940 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:25:35.070 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:25:35.070 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1964 ms
+00:25:35.998 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:25:36.138 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:25:36.367 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:25:36.388 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:25:36.433 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:25:36.581 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:25:36.623 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:25:36.667 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:25:36.692 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:25:36.695 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.206 seconds (JVM running for 5.591)
+00:25:52.369 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:25:52.369 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:25:52.380 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+00:25:53.326 logback [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:25:54.531 logback [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:28:16.152 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 8840 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:28:16.155 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:28:17.940 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5a273b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:28:18.272 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:28:18.286 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:28:18.296 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:28:18.296 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:28:18.303 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:28:18.434 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:28:18.434 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2200 ms
+00:28:19.358 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:28:19.494 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:28:19.735 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:28:19.754 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:28:19.797 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:28:19.945 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:28:19.987 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:28:20.031 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:28:20.056 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:28:20.059 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.409 seconds (JVM running for 5.753)
+00:28:40.629 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:28:40.629 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:28:40.636 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:28:40.731 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:28:41.845 logback [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:30:54.829 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 5216 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:30:54.833 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:30:56.480 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aff30bab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:30:56.816 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:30:56.831 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:30:56.839 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:30:56.840 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:30:56.846 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:30:56.976 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:30:56.976 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2082 ms
+00:30:57.874 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:30:58.072 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:30:58.350 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:30:58.370 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:30:58.414 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:30:58.572 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:30:58.614 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:30:58.659 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:30:58.685 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:30:58.688 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.348 seconds (JVM running for 5.597)
+00:31:02.444 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:31:02.444 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:31:02.452 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+00:31:03.300 logback [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:31:04.137 logback [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:31:24.094 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 7992 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:31:24.114 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:31:25.902 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b612e2c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:31:26.222 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:31:26.236 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:31:26.246 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:31:26.246 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:31:26.252 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:31:26.380 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:31:26.380 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2204 ms
+00:31:27.281 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:31:27.419 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:31:27.645 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:31:27.663 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:31:27.707 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:31:27.890 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:31:27.939 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:31:27.987 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:31:28.014 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:31:28.019 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 4.456 seconds (JVM running for 5.827)
+00:31:28.934 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:31:28.935 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:31:28.942 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+00:31:29.429 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:31:30.562 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+00:33:24.157 logback [main] INFO  com.qpanda.jls.JlsApplication - Starting JlsApplication on AloneStar-PC with PID 1404 (C:\Users\AloneStar\IdeaProjects\jls\target\classes started by AloneStar in C:\Users\AloneStar\IdeaProjects\jls)
+00:33:24.167 logback [main] INFO  com.qpanda.jls.JlsApplication - No active profile set, falling back to default profiles: default
+00:33:26.311 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ddb2e418] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:33:26.638 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+00:33:26.652 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+00:33:26.661 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:33:26.661 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+00:33:26.668 logback [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\AloneStar\AppData\Local\Android\sdk\tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;.]
+00:33:26.803 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+00:33:26.803 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2367 ms
+00:33:27.708 logback [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+00:33:27.849 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+00:33:28.081 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+00:33:28.100 logback [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+00:33:28.145 logback [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+00:33:28.298 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListUsingGET_1
+00:33:28.340 logback [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: getArticleListByTypeUsingGET_1
+00:33:28.385 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+00:33:28.410 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+00:33:28.413 logback [main] INFO  com.qpanda.jls.JlsApplication - Started JlsApplication in 5.018 seconds (JVM running for 6.429)
+00:33:30.757 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:33:30.757 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:33:30.766 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+00:33:31.441 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+00:33:32.622 logback [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

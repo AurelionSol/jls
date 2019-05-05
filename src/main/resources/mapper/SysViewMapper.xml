@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qpanda.jls.Dao.SysViewMapper">
+  <resultMap id="BaseResultMap" type="com.qpanda.jls.pojo.SysView">
+    <id column="sysviewId" jdbcType="INTEGER" property="sysviewid" />
+    <result column="sysviewIp" jdbcType="VARCHAR" property="sysviewip" />
+    <result column="sysviewDate" jdbcType="DATE" property="sysviewdate" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    sysviewId, sysviewIp, sysviewDate
+  </sql>
+  <select id="selectByExample" parameterType="com.qpanda.jls.pojo.SysViewExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from sysview
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sysview
+    where sysviewId = #{sysviewid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sysview
+    where sysviewId = #{sysviewid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.qpanda.jls.pojo.SysView">
+    insert into sysview (sysviewId, sysviewIp, sysviewDate
+      )
+    values (#{sysviewid,jdbcType=INTEGER}, #{sysviewip,jdbcType=VARCHAR}, #{sysviewdate,jdbcType=DATE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.qpanda.jls.pojo.SysView">
+    insert into sysview
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sysviewid != null">
+        sysviewId,
+      </if>
+      <if test="sysviewip != null">
+        sysviewIp,
+      </if>
+      <if test="sysviewdate != null">
+        sysviewDate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sysviewid != null">
+        #{sysviewid,jdbcType=INTEGER},
+      </if>
+      <if test="sysviewip != null">
+        #{sysviewip,jdbcType=VARCHAR},
+      </if>
+      <if test="sysviewdate != null">
+        #{sysviewdate,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qpanda.jls.pojo.SysView">
+    update sysview
+    <set>
+      <if test="sysviewip != null">
+        sysviewIp = #{sysviewip,jdbcType=VARCHAR},
+      </if>
+      <if test="sysviewdate != null">
+        sysviewDate = #{sysviewdate,jdbcType=DATE},
+      </if>
+    </set>
+    where sysviewId = #{sysviewid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qpanda.jls.pojo.SysView">
+    update sysview
+    set sysviewIp = #{sysviewip,jdbcType=VARCHAR},
+      sysviewDate = #{sysviewdate,jdbcType=DATE}
+    where sysviewId = #{sysviewid,jdbcType=INTEGER}
+  </update>
+</mapper>

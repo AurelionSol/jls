@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qpanda.jls.Dao.ChapterMapper">
+  <resultMap id="BaseResultMap" type="com.qpanda.jls.pojo.Chapter">
+    <id column="chapterId" jdbcType="INTEGER" property="chapterid" />
+    <result column="chapterName" jdbcType="VARCHAR" property="chaptername" />
+    <result column="chapterIntroduction" jdbcType="VARCHAR" property="chapterintroduction" />
+    <result column="chapterImg" jdbcType="VARCHAR" property="chapterimg" />
+    <result column="chapterReadNum" jdbcType="INTEGER" property="chapterreadnum" />
+    <result column="chaptertype" jdbcType="VARCHAR" property="chaptertype" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.qpanda.jls.pojo.Chapter">
+    <result column="chapterContent" jdbcType="LONGVARCHAR" property="chaptercontent" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    chapterId, chapterName, chapterIntroduction, chapterImg, chapterReadNum, chaptertype
+  </sql>
+  <sql id="Blob_Column_List">
+    chapterContent
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.qpanda.jls.pojo.ChapterExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from chapter
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.qpanda.jls.pojo.ChapterExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from chapter
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from chapter
+    where chapterId = #{chapterid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from chapter
+    where chapterId = #{chapterid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.qpanda.jls.pojo.Chapter">
+    insert into chapter (chapterId, chapterName, chapterIntroduction, 
+      chapterImg, chapterReadNum, chaptertype, 
+      chapterContent)
+    values (#{chapterid,jdbcType=INTEGER}, #{chaptername,jdbcType=VARCHAR}, #{chapterintroduction,jdbcType=VARCHAR}, 
+      #{chapterimg,jdbcType=VARCHAR}, #{chapterreadnum,jdbcType=INTEGER}, #{chaptertype,jdbcType=VARCHAR}, 
+      #{chaptercontent,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qpanda.jls.pojo.Chapter">
+    insert into chapter
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="chapterid != null">
+        chapterId,
+      </if>
+      <if test="chaptername != null">
+        chapterName,
+      </if>
+      <if test="chapterintroduction != null">
+        chapterIntroduction,
+      </if>
+      <if test="chapterimg != null">
+        chapterImg,
+      </if>
+      <if test="chapterreadnum != null">
+        chapterReadNum,
+      </if>
+      <if test="chaptertype != null">
+        chaptertype,
+      </if>
+      <if test="chaptercontent != null">
+        chapterContent,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="chapterid != null">
+        #{chapterid,jdbcType=INTEGER},
+      </if>
+      <if test="chaptername != null">
+        #{chaptername,jdbcType=VARCHAR},
+      </if>
+      <if test="chapterintroduction != null">
+        #{chapterintroduction,jdbcType=VARCHAR},
+      </if>
+      <if test="chapterimg != null">
+        #{chapterimg,jdbcType=VARCHAR},
+      </if>
+      <if test="chapterreadnum != null">
+        #{chapterreadnum,jdbcType=INTEGER},
+      </if>
+      <if test="chaptertype != null">
+        #{chaptertype,jdbcType=VARCHAR},
+      </if>
+      <if test="chaptercontent != null">
+        #{chaptercontent,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qpanda.jls.pojo.Chapter">
+    update chapter
+    <set>
+      <if test="chaptername != null">
+        chapterName = #{chaptername,jdbcType=VARCHAR},
+      </if>
+      <if test="chapterintroduction != null">
+        chapterIntroduction = #{chapterintroduction,jdbcType=VARCHAR},
+      </if>
+      <if test="chapterimg != null">
+        chapterImg = #{chapterimg,jdbcType=VARCHAR},
+      </if>
+      <if test="chapterreadnum != null">
+        chapterReadNum = #{chapterreadnum,jdbcType=INTEGER},
+      </if>
+      <if test="chaptertype != null">
+        chaptertype = #{chaptertype,jdbcType=VARCHAR},
+      </if>
+      <if test="chaptercontent != null">
+        chapterContent = #{chaptercontent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where chapterId = #{chapterid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.qpanda.jls.pojo.Chapter">
+    update chapter
+    set chapterName = #{chaptername,jdbcType=VARCHAR},
+      chapterIntroduction = #{chapterintroduction,jdbcType=VARCHAR},
+      chapterImg = #{chapterimg,jdbcType=VARCHAR},
+      chapterReadNum = #{chapterreadnum,jdbcType=INTEGER},
+      chaptertype = #{chaptertype,jdbcType=VARCHAR},
+      chapterContent = #{chaptercontent,jdbcType=LONGVARCHAR}
+    where chapterId = #{chapterid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qpanda.jls.pojo.Chapter">
+    update chapter
+    set chapterName = #{chaptername,jdbcType=VARCHAR},
+      chapterIntroduction = #{chapterintroduction,jdbcType=VARCHAR},
+      chapterImg = #{chapterimg,jdbcType=VARCHAR},
+      chapterReadNum = #{chapterreadnum,jdbcType=INTEGER},
+      chaptertype = #{chaptertype,jdbcType=VARCHAR}
+    where chapterId = #{chapterid,jdbcType=INTEGER}
+  </update>
+</mapper>

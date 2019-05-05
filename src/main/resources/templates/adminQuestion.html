@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java学习系统后台管理</title>
+    <link href="./css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <!--<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>-->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+    <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Morris Chart Styles-->
+    <link href="./js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="./css/custom-styles.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <!-- TABLE STYLES-->
+    <link href="./js/dataTables/dataTables.bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./vendor/simple-line-icons/css/simple-line-icons.css">
+    <!--<link rel="stylesheet" href="./vendor/font-awesome/css/fontawesome-all.min.css">-->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="sidebar-fixed header-fixed">
+<div class="page-wrapper">
+    <nav class="navbar-left page-header">
+        <a class="navbar-brand" href="#">
+            <img src="./imgs/dog.png" alt="Brand">
+        </a>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">导航</li>
+
+                    <li class="nav-item">
+                        <a href="admin" class="nav-link">
+                            <i class="icon icon-speedometer"></i> 数据统计
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="adminUser" class="nav-link">
+                            <i class="icon icon-puzzle"></i> 用户管理
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="adminChapter" class="nav-link">
+                            <i class="icon icon-book-open"></i> 章节管理
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="adminQuestion" class="nav-link active">
+                            <i class="icon icon-grid"></i> 题库管理
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="adminArticle" class="nav-link">
+                            <i class="icon icon-umbrella"></i> 文章管理
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="panel-body">
+                            题库管理
+                            <small>Question of JLS</small>
+                        </h1>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                题目列表
+                            </div>
+                            <div class="panel-body">
+
+                                <label>星级：</label>
+                                <select id="questionStar">
+                                    <option star="">全部</option>
+                                    <option star="1">★</option>
+                                    <option star="2">★★</option>
+                                    <option star="3">★★★</option>
+                                </select><br/><br/>
+
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover" id="dataTables-question">
+                                        <thead>
+                                        <tr>
+                                            <th>题目ID</th>
+                                            <th>内容</th>
+                                            <th>答案</th>
+                                            <th>星级</th>
+                                            <th>类型</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="tbody-question">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. END ROW -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                新增题目
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>内容:</label>
+                                        <input class="form-control" id="addQuestionContent">
+                                    </div>
+                                </div>
+                                <!-- /. END ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>答案：</label>
+                                    </div>
+                                </div>
+                                <!-- /. END ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea id="addQuestionAnswer" class="form-control" rows="1"></textarea>
+                                    </div>
+                                </div>
+                                <!-- /. END ROW -->
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <label>星级：</label>
+                                        <select id="addQuestionStar">
+                                            <option star="1">★</option>
+                                            <option star="2">★★</option>
+                                            <option star="3">★★★</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- /. END ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>分类：</label>
+                                        <input class="form-control" id="addQuestionType"/>
+                                    </div>
+                                </div>
+                                <!-- /. END ROW -->
+                                <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4 text-center">
+                                        <button id="addQuestionBtn" class="form-control btn btn-success">确认添加</button>
+                                    </div>
+                                    <div class="col-md-4"></div>
+
+                                </div>
+                                <!-- /. END ROW -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. END ROW -->
+
+                <footer>
+                    <p>Copyright &copy; 2018.Company name.qpanda</p>
+                </footer>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header alert-success">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>题目内容:</label>
+                        <input class="form-control" id="updateContent" rows="4">
+                    </div>
+                </div>
+                <!-- /. END ROW -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>题目答案:</label>
+                        <input class="form-control" id="updateAnswer" />
+                    </div>
+                </div>
+                <!-- /. END ROW -->
+                <label>题目星级：</label>
+                <select id="updateStar">
+                    <option star="1">★</option>
+                    <option star="2">★★</option>
+                    <option star="3">★★★</option>
+                </select>
+                <!-- /. END ROW -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>文章分类:</label>
+                        <input class="form-control" id="updateType"/>
+                    </div>
+                </div>
+                <!-- /. END ROW -->
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="updateBtn" class="btn btn-success" data-dismiss="modal" >确认更新
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /. END MODAL -->
+
+
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header alert-danger">
+                <button  type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                请确认是否删除！
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="confirmBtn" class="btn btn-danger" data-dismiss="modal" commentId="">确认
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /. END MODAL -->
+
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/popper.js/popper.min.js"></script>
+<script src="./js/jquery-1.10.2.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/chart.js/chart.min.js"></script>
+<script src="./js/carbon.js"></script>
+<script src="./js/demo.js"></script>
+<!-- JS Scripts-->
+
+<!-- Metis Menu Js -->
+<script src="./js/jquery.metisMenu.js"></script>
+<!-- Morris Chart Js -->
+<script src="./js/morris/raphael-2.1.0.min.js"></script>
+
+<script src="./js/dataTables/jquery.dataTables.js"></script>
+<script src="./js/dataTables/dataTables.bootstrap.js"></script>
+
+<script src="./js/pages/question.js"></script>
+
+</body>
+</html>

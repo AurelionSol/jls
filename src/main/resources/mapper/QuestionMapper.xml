@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qpanda.jls.Dao.QuestionMapper">
+  <resultMap id="BaseResultMap" type="com.qpanda.jls.pojo.Question">
+    <id column="questionId" jdbcType="INTEGER" property="questionid" />
+    <result column="questionType" jdbcType="VARCHAR" property="questiontype" />
+    <result column="questionContent" jdbcType="VARCHAR" property="questioncontent" />
+    <result column="questionAnswer" jdbcType="VARCHAR" property="questionanswer" />
+    <result column="questionStar" jdbcType="VARCHAR" property="questionstar" />
+    <result column="questionAnalysis" jdbcType="VARCHAR" property="questionanalysis" />
+    <result column="questionA" jdbcType="VARCHAR" property="questiona" />
+    <result column="questionB" jdbcType="VARCHAR" property="questionb" />
+    <result column="questionC" jdbcType="VARCHAR" property="questionc" />
+    <result column="questionD" jdbcType="VARCHAR" property="questiond" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    questionId, questionType, questionContent, questionAnswer, questionStar, questionAnalysis, 
+    questionA, questionB, questionC, questionD
+  </sql>
+  <select id="selectByExample" parameterType="com.qpanda.jls.pojo.QuestionExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from question
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from question
+    where questionId = #{questionid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from question
+    where questionId = #{questionid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.qpanda.jls.pojo.Question">
+    insert into question (questionId, questionType, questionContent, 
+      questionAnswer, questionStar, questionAnalysis, 
+      questionA, questionB, questionC, 
+      questionD)
+    values (#{questionid,jdbcType=INTEGER}, #{questiontype,jdbcType=VARCHAR}, #{questioncontent,jdbcType=VARCHAR}, 
+      #{questionanswer,jdbcType=VARCHAR}, #{questionstar,jdbcType=VARCHAR}, #{questionanalysis,jdbcType=VARCHAR}, 
+      #{questiona,jdbcType=VARCHAR}, #{questionb,jdbcType=VARCHAR}, #{questionc,jdbcType=VARCHAR}, 
+      #{questiond,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qpanda.jls.pojo.Question">
+    insert into question
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="questionid != null">
+        questionId,
+      </if>
+      <if test="questiontype != null">
+        questionType,
+      </if>
+      <if test="questioncontent != null">
+        questionContent,
+      </if>
+      <if test="questionanswer != null">
+        questionAnswer,
+      </if>
+      <if test="questionstar != null">
+        questionStar,
+      </if>
+      <if test="questionanalysis != null">
+        questionAnalysis,
+      </if>
+      <if test="questiona != null">
+        questionA,
+      </if>
+      <if test="questionb != null">
+        questionB,
+      </if>
+      <if test="questionc != null">
+        questionC,
+      </if>
+      <if test="questiond != null">
+        questionD,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="questionid != null">
+        #{questionid,jdbcType=INTEGER},
+      </if>
+      <if test="questiontype != null">
+        #{questiontype,jdbcType=VARCHAR},
+      </if>
+      <if test="questioncontent != null">
+        #{questioncontent,jdbcType=VARCHAR},
+      </if>
+      <if test="questionanswer != null">
+        #{questionanswer,jdbcType=VARCHAR},
+      </if>
+      <if test="questionstar != null">
+        #{questionstar,jdbcType=VARCHAR},
+      </if>
+      <if test="questionanalysis != null">
+        #{questionanalysis,jdbcType=VARCHAR},
+      </if>
+      <if test="questiona != null">
+        #{questiona,jdbcType=VARCHAR},
+      </if>
+      <if test="questionb != null">
+        #{questionb,jdbcType=VARCHAR},
+      </if>
+      <if test="questionc != null">
+        #{questionc,jdbcType=VARCHAR},
+      </if>
+      <if test="questiond != null">
+        #{questiond,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.qpanda.jls.pojo.Question">
+    update question
+    <set>
+      <if test="questiontype != null">
+        questionType = #{questiontype,jdbcType=VARCHAR},
+      </if>
+      <if test="questioncontent != null">
+        questionContent = #{questioncontent,jdbcType=VARCHAR},
+      </if>
+      <if test="questionanswer != null">
+        questionAnswer = #{questionanswer,jdbcType=VARCHAR},
+      </if>
+      <if test="questionstar != null">
+        questionStar = #{questionstar,jdbcType=VARCHAR},
+      </if>
+      <if test="questionanalysis != null">
+        questionAnalysis = #{questionanalysis,jdbcType=VARCHAR},
+      </if>
+      <if test="questiona != null">
+        questionA = #{questiona,jdbcType=VARCHAR},
+      </if>
+      <if test="questionb != null">
+        questionB = #{questionb,jdbcType=VARCHAR},
+      </if>
+      <if test="questionc != null">
+        questionC = #{questionc,jdbcType=VARCHAR},
+      </if>
+      <if test="questiond != null">
+        questionD = #{questiond,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where questionId = #{questionid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.qpanda.jls.pojo.Question">
+    update question
+    set questionType = #{questiontype,jdbcType=VARCHAR},
+      questionContent = #{questioncontent,jdbcType=VARCHAR},
+      questionAnswer = #{questionanswer,jdbcType=VARCHAR},
+      questionStar = #{questionstar,jdbcType=VARCHAR},
+      questionAnalysis = #{questionanalysis,jdbcType=VARCHAR},
+      questionA = #{questiona,jdbcType=VARCHAR},
+      questionB = #{questionb,jdbcType=VARCHAR},
+      questionC = #{questionc,jdbcType=VARCHAR},
+      questionD = #{questiond,jdbcType=VARCHAR}
+    where questionId = #{questionid,jdbcType=INTEGER}
+  </update>
+</mapper>
